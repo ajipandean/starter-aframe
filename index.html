@@ -9,15 +9,17 @@
 </head>
 <body>
   <a-scene fog>
-    <a-asset>
+    <a-assets>
       <img
         src="assets/underwater.jpg_large"
         id="underwater"
         style="object-fit: cover;"
       />
-    </a-asset>
-
+      <a-asset-item id="white-shark" src="assets/white-shark-model/scene.gltf"></a-asset-item>
+    </a-assets>
     <a-sky src="#underwater"></a-sky>
   </a-scene>
+
+  <script src="scripts/sharks.js" charset="utf-8"></script>
 </body>
 </html>
