@@ -8,8 +8,16 @@
   <script src="https://aframe.io/releases/1.0.4/aframe.min.js" charset="utf-8"></script>
 </head>
 <body>
-  <a-scene>
-    <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+  <a-scene fog>
+    <a-asset>
+      <img
+        src="assets/underwater.jpg_large"
+        id="underwater"
+        style="object-fit: cover;"
+      />
+    </a-asset>
+
+    <a-sky src="#underwater"></a-sky>
   </a-scene>
 </body>
 </html>
