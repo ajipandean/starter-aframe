@@ -17,11 +17,16 @@
       />
       <a-asset-item id="white-shark" src="assets/white-shark-model/scene.gltf"></a-asset-item>
       <a-asset-item id="fish" src="assets/fish-model/scene.gltf"></a-asset-item>
+      <a-asset-item id="tropical-fish" src="assets/tropical-fish-model/scene.gltf"></a-asset-item>
     </a-assets>
     <a-sky src="#underwater"></a-sky>
   </a-scene>
 
-  <script src="scripts/sharks.js" charset="utf-8"></script>
-  <script src="scripts/fish.js" charset="utf-8"></script>
+  <script src="scripts/main.js" charset="utf-8"></script>
+  <script>
+    generateModels(1, 'white-shark');
+    generateModels(2, 'fish');
+    generateModels(3, 'tropical-fish')
+  </script>
 </body>
 </html>
